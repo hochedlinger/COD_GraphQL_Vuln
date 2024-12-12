@@ -7,11 +7,11 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.native -t quarkus/graphqldemo .
+# docker build -f src/main/docker/Dockerfile.native -t quarkus/graphql-demo .
 #
 # Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/graphqldemo
+# docker run -i --rm -p 8080:8080 quarkus/graphql-demo
 #
 ###
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.10

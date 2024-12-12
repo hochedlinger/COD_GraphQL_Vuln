@@ -1,4 +1,10 @@
-# graphqldemo
+# graphql-demo
+
+This is a simple demo project to show how to create APIs using GraphQL.
+This project was done during the Cyber Offense and Defense course at UniCal 2024.
+
+
+# Quarkus
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -49,16 +55,24 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 ./mvnw package -Dnative -Dquarkus.native.container-build=true
 ```
 
-You can then execute your native executable with: `./target/graphqldemo-1.0-SNAPSHOT-runner`
+You can then execute your native executable with: `./target/graphql-demo-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
 
 ## Related Guides
 
-- SmallRye GraphQL ([guide](https://quarkus.io/guides/smallrye-graphql)): Create GraphQL Endpoints using the code-first
-  approach from MicroProfile GraphQL
+- Hibernate ORM ([guide](https://quarkus.io/guides/hibernate-orm)): Define your persistent model with Hibernate ORM and Jakarta Persistence
+- SmallRye GraphQL ([guide](https://quarkus.io/guides/smallrye-graphql)): Create GraphQL Endpoints using the code-first approach from MicroProfile GraphQL
 
 ## Provided Code
+
+### Hibernate ORM
+
+Create your first JPA entity
+
+[Related guide section...](https://quarkus.io/guides/hibernate-orm)
+
+
 
 ### SmallRye GraphQL
 
