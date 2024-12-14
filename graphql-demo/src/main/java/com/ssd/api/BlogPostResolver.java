@@ -4,6 +4,7 @@ import com.ssd.domain.BlogPost;
 import com.ssd.dal.BlogPostDao;
 import com.ssd.dal.BlogUserDao;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import org.eclipse.microprofile.graphql.*;
 
 import java.util.List;
@@ -25,6 +26,7 @@ public class BlogPostResolver {
 
     @Mutation
     @Description("Create a new blog post")
+    @Transactional
     public BlogPost createPost(@Name("authorId") Long authorId,
                                @Name("title") String title,
                                @Name("content") String content) {
@@ -44,6 +46,7 @@ public class BlogPostResolver {
 
     @Mutation
     @Description("Delete a blog post by ID")
+    @Transactional
     public boolean deletePost(@Name("postId") Long postId) {
         BlogPost post = blogPostDao.findById(postId);
         if (post != null) {
